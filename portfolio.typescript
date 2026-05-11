@@ -1,0 +1,168 @@
+export default function MaxtronPortfolio() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Hero Section */}
+      <section className="px-6 py-20 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p className="text-green-400 text-sm mb-3">Cybersecurity • Developer • Builder</p>
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Hi, I'm <span className="text-green-400">Mahes</span>
+            </h1>
+            <p className="text-gray-400 mt-6 text-lg leading-relaxed">
+              Computer Science & Cyber Security student passionate about bug bounty,
+              AI systems, and building real-world projects.
+            </p>
+
+            <div className="flex gap-4 mt-8 flex-wrap">
+              <a
+                href="#projects"
+                className="bg-green-500 hover:bg-green-400 transition px-6 py-3 rounded-2xl font-semibold text-black"
+              >
+                View Projects
+              </a>
+
+              <a
+                href="https://github.com"
+                target="_blank"
+                className="border border-gray-700 hover:border-green-400 transition px-6 py-3 rounded-2xl"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-zinc-900 rounded-3xl p-8 border border-zinc-800 shadow-2xl">
+            <div className="space-y-4">
+              <div>
+                <p className="text-gray-500">Current Focus</p>
+                <h3 className="text-2xl font-bold mt-1">Bug Bounty & Full Stack Development</h3>
+              </div>
+
+              <div>
+                <p className="text-gray-500">Main Project</p>
+                <h3 className="text-2xl font-bold mt-1 text-green-400">MAXTRON AI</h3>
+              </div>
+
+              <div>
+                <p className="text-gray-500">Skills</p>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {[
+                    "React",
+                    "Node.js",
+                    "MongoDB",
+                    "Cyber Security",
+                    "Python",
+                    "JavaScript",
+                    "Bug Bounty"
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="bg-zinc-800 border border-zinc-700 px-4 py-2 rounded-xl text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="px-6 py-16 bg-zinc-950">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12">Projects</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-green-400 transition">
+              <h3 className="text-2xl font-bold text-green-400">MAXTRON AI</h3>
+              <p className="text-gray-400 mt-4 leading-relaxed">
+                AI-powered platform focused on automation, deployment, and intelligent tools.
+                Built with modern web technologies and scalable architecture.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mt-6">
+                {['React', 'Node.js', 'MongoDB', 'AI'].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-black border border-zinc-700 px-3 py-1 rounded-lg text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-green-400 transition">
+              <h3 className="text-2xl font-bold text-green-400">Cyber Defense Learning Game</h3>
+              <p className="text-gray-400 mt-4 leading-relaxed">
+                Interactive learning platform for cybersecurity concepts using gamified
+                challenges and practical attack-defense simulations.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mt-6">
+                {['React', 'Express.js', 'MongoDB', 'JWT'].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-black border border-zinc-700 px-3 py-1 rounded-lg text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="px-6 py-16">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8">About Me</h2>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I am a Computer Science Engineering student specializing in Cyber Security.
+              I enjoy building projects, exploring bug bounty hunting, and learning how
+              modern systems work under the hood.
+            </p>
+
+            <p className="text-gray-400 mt-6 leading-relaxed">
+              My goal is to become a strong security researcher and full stack developer
+              while building impactful technology products.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="px-6 py-20 bg-zinc-950">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold">Let's Connect</h2>
+          <p className="text-gray-400 mt-4 text-lg">
+            Open to internships, collaborations, and cybersecurity opportunities.
+          </p>
+
+          <div className="flex justify-center gap-4 mt-10 flex-wrap">
+            <a
+              href="mailto:yourmail@gmail.com"
+              className="bg-green-500 text-black px-6 py-3 rounded-2xl font-semibold hover:bg-green-400 transition"
+            >
+              Email Me
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              className="border border-zinc-700 px-6 py-3 rounded-2xl hover:border-green-400 transition"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
